@@ -97,70 +97,83 @@
                   </li>
                   <li>
                     <span class="ion-pricetag"></span>
-                    <a href="#">Github-repository</a>
+                    <a href="https://github.com/Moon-Taein/MiniProjectTeam5_2">Github-repository-KIOSK</a>
+                    <span class="ion-pricetag"></span>
+                    <a href="https://github.com/Moon-Taein/MiniprojectTeam5_1">Github-repository-POS</a>
                   </li>
                 </ul>
               </div>
               <div class="article-content">
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Cras ultricies ligula sed magna dictum porta. Quisque velit
-                  nisi, pretium ut lacinia in, elementum id enim. Praesent
-                  sapien massa, convallis a pellentesque nec, egestas non nisi.
-                  Vestibulum ante ipsum primis in faucibus orci luctus et
-                  ultrices posuere cubilia Curae; Donec velit neque, auctor sit
-                  amet aliquam vel, ullamcorper sit amet ligula. Nulla quis
-                  lorem ut libero malesuada feugiat.
-                </p>
                 <blockquote class="blockquote">
                   <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
+                    ● 주제
                   </p>
                 </blockquote>
                 <p>
-                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
-                  magna dictum porta. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Cras ultricies ligula sed magna
-                  dictum porta. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Donec sollicitudin molestie malesuada.
-                </p>
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent sapien massa, convallis a pellentesque nec, egestas
-                  non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-                  at sem. Donec rutrum congue leo eget malesuada.
-                </p>
+                  - 하나의 DB를 공유하는 두 개의 프로그램으로 키오스크-POS 시스템 만들기<br>
+                  - 키오스크 = 고객의 주문을 받아 주문서를 만들어서 DB에 기록<br>
+                  - POS = 키오스크에서 만들어진 주문서를 DB에서 읽어서 처리
+                </p>                
                 <blockquote class="blockquote">
                   <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
+                    ● 학습 목표
                   </p>
                 </blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  quis lorem ut libero malesuada feugiat. Curabitur arcu erat,
-                  accumsan id imperdiet et, porttitor at sem. Vivamus suscipit
-                  tortor eget felis porttitor volutpat. Vivamus suscipit tortor
-                  eget felis porttitor volutpat. Quisque velit nisi, pretium ut
-                  lacinia in, elementum id enim.
+                  - JDBC를 활용하여 MySQL-RDBMS 데이터베이스 java와 연계하기<br>
+- JFrame으로 java 프로그램 화면 구성하기<br>
+- 두 개의 프로그램을 하나의 DB에 연결하여 사용하기<br>
+- Github 활용해서 소프트웨어 버전 관리
                 </p>
                 <blockquote class="blockquote">
                   <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
+                    ● 개발 중점 사항
                   </p>
                 </blockquote>
-                
                 <p>
-                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
-                  magna dictum porta. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Cras ultricies ligula sed magna
-                  dictum porta. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Donec sollicitudin molestie malesuada.
+                  - 하나의 DB를 공유하기 때문에 키오스크가 주문서 DB의 테이블 포맷에 맞게 구성해서
+- DB에 정확하게 입력해줘야함<br>
+- 음식 및 재료들의 정보(이미지, 이름 등)는 DB에서 가져와서 구성<br>
+- 프레임을 구성하는 이미지 정보는 프로젝트 폴더 내에서 가져와서 구성 <br>
+- 수량을 추가하거나 페이지를 이동하는 행동을 할 때 정확하게 동작하도록 만들기
                 </p>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    ● 담당 업무
+                  </p>
+                </blockquote>                
+                <p>
+                  - 키오스크의 전반적인 버튼들의 동적인 액션 메소드 담당<br>
+- 키오스크에서 사용자의 선택으로 주문서 객체를 만들기<br>
+- 만들어진 주문서를 최종적으로 DB에 전달
+                </p>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    ● 개발 도중 생긴 이슈
+                  </p>
+                </blockquote>                
+                <p>
+                  - 두 개의 프로그램을 동시에 만들다 보니 POS 프로그램에서 테스팅을 하기 위해서는 키오스크에서 만들어서 저장한 DB 데이터가 필요했지만 개발속도가 맞지 않아 차질이 생김 <br>
+                  &emsp;&emsp;  -> DB에 직접 주문서 샘플데이터를 입력해서 서로 개발에 문제가 없게 해결<br>
+- 프로젝트 내의 이미지 소스를 가져와서 사용하는 부분 jar 파일로 export시 이미지 로드 실패<br>
+&emsp;&emsp; -> 이클립스에서는 자동으로 경로를 어느정도 맞춰 줌<br>
+&emsp;&emsp;  -> export시에는 엄격하게 경로를 매칭해줘야 제대로 로드<br>
+&emsp;&emsp; -> 문제 되는 부분의 경로를 다시 설정해서 오류 수정 
+                </p>
+                           
+                <p></p>
+                <div class="card text-white bg-info mb-3" style="max-width: 60rem;">
+                  <div class="card-header"></div>
+                  <div class="card-body">
+                    <h4 class="card-title">● 소스 코드 </h4>
+                    <p class="card-text">
+                      키오스크  <a href="https://github.com/Moon-Taein/MiniProjectTeam5_2">https://github.com/Moon-Taein/MiniProjectTeam5_2</a><br>
+                      POS  <a href="https://github.com/Moon-Taein/MiniprojectTeam5_1">https://github.com/Moon-Taein/MiniprojectTeam5_1</a><br>
+                      발표자료  <a href="https://docs.google.com/presentation/d/1XUU_mBhS8_Ih8R06dMHVkRolEerXoaHw/edit?usp=drive_link&ouid=107417972941469059813&rtpof=true&sd=true">https://docs.google.com/presentation/d/1XUU_mBhS8_Ih8R06dMHVkRolEerXoaHw/edit?usp=drive_link&ouid=107417972941469059813&rtpof=true&sd=true</a>
+                      
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- <div class="box-comments">
