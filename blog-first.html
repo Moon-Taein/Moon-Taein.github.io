@@ -83,12 +83,12 @@
         <div class="row">
           <div class="col-md-12">
             <div class="post-box">
-              <div  class="post-thumb" >
-                <img class="center-block" style="width: 30rem" src="img/Tmote.png"  alt="" />
+              <div class="post-thumb">
+                <img class="center-block" src="img/Tmote.png" alt="" />
               </div>
               <div class="post-meta">
                 <h1 class="article-title">
-                  트위치 API를 이용하여 트위치 리모컨 사이트 개발
+                  트위치 API를 이용하여 트위치 리모컨 사이트 개발(개발중)
                 </h1>
                 <ul>
                   <li>
@@ -102,294 +102,62 @@
                 </ul>
               </div>
               <div class="article-content">
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Cras ultricies ligula sed magna dictum porta. Quisque velit
-                  nisi, pretium ut lacinia in, elementum id enim. Praesent
-                  sapien massa, convallis a pellentesque nec, egestas non nisi.
-                  Vestibulum ante ipsum primis in faucibus orci luctus et
-                  ultrices posuere cubilia Curae; Donec velit neque, auctor sit
-                  amet aliquam vel, ullamcorper sit amet ligula. Nulla quis
-                  lorem ut libero malesuada feugiat.
-                </p>
                 <blockquote class="blockquote">
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
-                  </p>
+                  <p class="mb-0">● 주제</p>
                 </blockquote>
                 <p>
-                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
-                  magna dictum porta. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Cras ultricies ligula sed magna
-                  dictum porta. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Donec sollicitudin molestie malesuada.
-                </p>
-                <p>
-                  Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Praesent sapien massa, convallis a pellentesque nec, egestas
-                  non nisi. Lorem ipsum dolor sit amet, consectetur adipiscing
-                  elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-                  at sem. Donec rutrum congue leo eget malesuada.
+                  - 트위치 API를 활용하여 팔로우리스트 한눈에 보는 사이트<br />
+                  - 트위치 웹사이트의 불편한 부분 개선하기 <br />
+                  &emsp;> 약한 알람 기능 <br />
+                  &emsp;> ...
                 </p>
                 <blockquote class="blockquote">
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
-                  </p>
+                  <p class="mb-0">● 학습 목표</p>
                 </blockquote>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                  quis lorem ut libero malesuada feugiat. Curabitur arcu erat,
-                  accumsan id imperdiet et, porttitor at sem. Vivamus suscipit
-                  tortor eget felis porttitor volutpat. Vivamus suscipit tortor
-                  eget felis porttitor volutpat. Quisque velit nisi, pretium ut
-                  lacinia in, elementum id enim.
+                  - Open API 공부하고 사용법 숙달 <br />
+                  - Spring Boot를 사용하며 웹페이지 제작<br />
+                  - Bootstrap 사용하여 페이지 스타일 구성
                 </p>
                 <blockquote class="blockquote">
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Integer posuere erat a ante.
-                  </p>
+                  <p class="mb-0">● 개발 중점 사항</p>
                 </blockquote>
-                
                 <p>
-                  Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed
-                  magna dictum porta. Mauris blandit aliquet elit, eget
-                  tincidunt nibh pulvinar a. Cras ultricies ligula sed magna
-                  dictum porta. Lorem ipsum dolor sit amet, consectetur
-                  adipiscing elit. Donec sollicitudin molestie malesuada.
+                  - API 정보를 request, response 데이터 형태와 타입 유의<br />
+                  - JSON 형태의 데이터 포맷팅<br />
                 </p>
-              </div>
-            </div>
-            <!-- <div class="box-comments">
-              <div class="title-box-2">
-                <h4 class="title-comments title-left">Comments (34)</h4>
-              </div>
-              <ul class="list-comments">
-                <li>
-                  <div class="comment-avatar">
-                    <img src="img/testimonial-2.jpg" alt="" />
-                  </div>
-                  <div class="comment-details">
-                    <h4 class="comment-author">Oliver Colmenares</h4>
-                    <span>18 Sep 2017</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Dolores reprehenderit, provident cumque ipsam temporibus
-                      maiores quae natus libero optio, at qui beatae ducimus
-                      placeat debitis voluptates amet corporis.
+                <blockquote class="blockquote">
+                  <p class="mb-0">● 개발 도중 생긴 이슈</p>
+                </blockquote>
+                <p>
+                  - JSONArray로 받아온 팔로우리스트 정보를 토대로 스트리머의
+                  현재 방송 상태를 조회할때 request가 다수 발생<br />
+                  - request&response의 반복적인 수행으로 인해 로딩 속도가 굉장히
+                  느림<br />
+                  &emsp;> 한번에 한명의 정보를 받아오기 때문에 여러번의
+                  request가 발생 <br />
+                  &emsp;> 파라미터에 추가로 여러명의 id를 추가해서 한번에
+                  여러명의 정보를 받아오도록 설계<br />
+                </p>
+
+                <div
+                  class="card text-white bg-info mb-3"
+                  style="max-width: 60rem"
+                >
+                  <div class="card-header"></div>
+                  <div class="card-body">
+                    <h4 class="card-title">● 소스 코드</h4>
+                    <p class="card-text">
+                      소스코드
+                      <a href=""></a><br />
+                      발표자료
+                      <a href=""></a>
                     </p>
-                    <a href="3">Reply</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="comment-avatar">
-                    <img src="img/testimonial-4.jpg" alt="" />
-                  </div>
-                  <div class="comment-details">
-                    <h4 class="comment-author">Carmen Vegas</h4>
-                    <span>18 Sep 2017</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Dolores reprehenderit, provident cumque ipsam temporibus
-                      maiores quae natus libero optio, at qui beatae ducimus
-                      placeat debitis voluptates amet corporis, veritatis
-                      deserunt.
-                    </p>
-                    <a href="3">Reply</a>
-                  </div>
-                </li>
-                <li class="comment-children">
-                  <div class="comment-avatar">
-                    <img src="img/testimonial-2.jpg" alt="" />
-                  </div>
-                  <div class="comment-details">
-                    <h4 class="comment-author">Oliver Colmenares</h4>
-                    <span>18 Sep 2017</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Dolores reprehenderit, provident cumque ipsam temporibus
-                      maiores quae.
-                    </p>
-                    <a href="3">Reply</a>
-                  </div>
-                </li>
-                <li>
-                  <div class="comment-avatar">
-                    <img src="img/testimonial-2.jpg" alt="" />
-                  </div>
-                  <div class="comment-details">
-                    <h4 class="comment-author">Oliver Colmenares</h4>
-                    <span>18 Sep 2017</span>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Dolores reprehenderit, provident cumque ipsam temporibus
-                      maiores quae natus libero optio.
-                    </p>
-                    <a href="3">Reply</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="form-comments">
-              <div class="title-box-2">
-                <h3 class="title-left">Leave a Reply</h3>
-              </div>
-              <form class="form-mf">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control input-mf"
-                        id="inputName"
-                        placeholder="Name *"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <div class="form-group">
-                      <input
-                        type="email"
-                        class="form-control input-mf"
-                        id="inputEmail1"
-                        placeholder="Email *"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <div class="form-group">
-                      <input
-                        type="url"
-                        class="form-control input-mf"
-                        id="inputUrl"
-                        placeholder="Website"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12 mb-3">
-                    <div class="form-group">
-                      <textarea
-                        id="textMessage"
-                        class="form-control input-mf"
-                        placeholder="Comment *"
-                        name="message"
-                        cols="45"
-                        rows="8"
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <button
-                      type="submit"
-                      class="button button-a button-big button-rouded"
-                    >
-                      Send Message
-                    </button>
                   </div>
                 </div>
-              </form>
-            </div>
-          </div> -->
-          <!-- <div class="col-md-4">
-            <div class="widget-sidebar sidebar-search">
-              <h5 class="sidebar-title">Search</h5>
-              <div class="sidebar-content">
-                <form>
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Search for..."
-                      aria-label="Search for..."
-                    />
-                    <span class="input-group-btn">
-                      <button
-                        class="btn btn-secondary btn-search"
-                        type="button"
-                      >
-                        <span class="ion-android-search"></span>
-                      </button>
-                    </span>
-                  </div>
-                </form>
               </div>
             </div>
-            <div class="widget-sidebar">
-              <h5 class="sidebar-title">Recent Post</h5>
-              <div class="sidebar-content">
-                <ul class="list-sidebar">
-                  <li>
-                    <a href="#">Atque placeat maiores.</a>
-                  </li>
-                  <li>
-                    <a href="#">Lorem ipsum dolor sit amet consectetur</a>
-                  </li>
-                  <li>
-                    <a href="#">Nam quo autem exercitationem.</a>
-                  </li>
-                  <li>
-                    <a href="#">Atque placeat maiores nam quo autem</a>
-                  </li>
-                  <li>
-                    <a href="#">Nam quo autem exercitationem.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="widget-sidebar">
-              <h5 class="sidebar-title">Archives</h5>
-              <div class="sidebar-content">
-                <ul class="list-sidebar">
-                  <li>
-                    <a href="#">September, 2017.</a>
-                  </li>
-                  <li>
-                    <a href="#">April, 2017.</a>
-                  </li>
-                  <li>
-                    <a href="#">Nam quo autem exercitationem.</a>
-                  </li>
-                  <li>
-                    <a href="#">Atque placeat maiores nam quo autem</a>
-                  </li>
-                  <li>
-                    <a href="#">Nam quo autem exercitationem.</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="widget-sidebar widget-tags">
-              <h5 class="sidebar-title">Tags</h5>
-              <div class="sidebar-content">
-                <ul>
-                  <li>
-                    <a href="#">Web.</a>
-                  </li>
-                  <li>
-                    <a href="#">Design.</a>
-                  </li>
-                  <li>
-                    <a href="#">Travel.</a>
-                  </li>
-                  <li>
-                    <a href="#">Photoshop</a>
-                  </li>
-                  <li>
-                    <a href="#">Corel Draw</a>
-                  </li>
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </section>
