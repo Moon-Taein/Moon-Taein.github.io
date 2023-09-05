@@ -108,38 +108,39 @@
                   <p class="mb-0">● 주제</p>
                 </blockquote>
                 <p>
-                  - 트위치 API를 활용하여 팔로우리스트 한눈에 보는 사이트<br />
-                  - 트위치 웹사이트의 불편한 부분 개선하기 <br />
-                  &emsp;> 약한 알람 기능 <br />
-                  &emsp;> ...
+                  - 얼굴인식을 통해 사용자가 누구인지 확인하고 이를 통해 해당 사용자의 정보를 카메라 화면에 증간현실(AR)처럼 띄워주는 프로그램  <br />
                 </p>
                 <blockquote class="blockquote">
                   <p class="mb-0">● 학습 목표</p>
                 </blockquote>
                 <p>
-                  - Open API 공부하고 사용법 숙달 <br />
-                  - Spring Boot를 사용하며 웹페이지 제작<br />
-                  - Bootstrap 사용하여 페이지 스타일 구성
+                  - Unity 엔진을 활용하여 Android 앱 빌드<br />
+                  - OpenCV 라이브러리 사용해서 사용자 얼굴 인식 및 정보 수집<br />
+                  - AWS EC2, RDS 클라우드 서버 사용하여 배포
                 </p>
                 <blockquote class="blockquote">
                   <p class="mb-0">● 개발 중점 사항</p>
                 </blockquote>
                 <p>
-                  - API 정보를 request, response 데이터 형태와 타입 유의<br />
-                  - JSON 형태의 데이터 포맷팅<br />
+                  - Haar-Based Cascade를 통한 얼굴 생체인식 구현<br />
+                  - Unity로 Android 어플리케이션을 빌드하여 AWS를 이용하여 배포<br />
+                </p>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    ● 담당 업무
+                  </p>
+                </blockquote>                
+                <p>
+                  - 프로젝트 아이디어 및 개발 모델 구상<br />
+                  - OpenCV를 통해 얼굴의 정보 객체를 만들고 저장
                 </p>
                 <blockquote class="blockquote">
                   <p class="mb-0">● 개발 도중 생긴 이슈</p>
                 </blockquote>
                 <p>
-                  - JSONArray로 받아온 팔로우리스트 정보를 토대로 스트리머의
-                  현재 방송 상태를 조회할때 request가 다수 발생<br />
-                  - request&response의 반복적인 수행으로 인해 로딩 속도가 굉장히
-                  느림<br />
-                  &emsp;> 한번에 한명의 정보를 받아오기 때문에 여러번의
-                  request가 발생 <br />
-                  &emsp;> 파라미터에 추가로 여러명의 id를 추가해서 한번에
-                  여러명의 정보를 받아오도록 설계<br />
+                  - 해당 알고리즘의 특성상 비슷한 값의 객체를 가지게 되는 정보에 대해서 지금 인식하고있는 객체의 정보가 DB에 저장된 그 사람의 정보인지 확실하지 않음<br />
+                  &emsp-> 비슷한 값을 가진 객체의 구분을 위해 오차범위를 줄여 보았음<br />
+                  &emsp-> 어느정도 해결은 되었지만 완벽하게 구분되어지진 않았음<br />
                 </p>
 
                 <div
